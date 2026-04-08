@@ -169,7 +169,7 @@ create_service_script() {
     echo "📋 Creating service script..."
     
     sudo tee /usr/local/bin/xigmatek-monitor.py > /dev/null << EOF
-#!$PYTHON_CMD
+#!/usr/bin/env $PYTHON_CMD
 """
 XIGMATEK Temperature Monitor Service
 Universal Linux version with auto-detection and recovery
